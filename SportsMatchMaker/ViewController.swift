@@ -7,9 +7,6 @@
 //
 
 
-// github upload.
-
-
 import UIKit
 import CoreLocation
 
