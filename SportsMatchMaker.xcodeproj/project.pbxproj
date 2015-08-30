@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1DCF6BBBC0BF8A60744AAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EED0A95C93DF6EF99AFEF5 /* libPods.a */; };
 		E5845D951B6D05B500453211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5845D941B6D05B500453211 /* AppDelegate.swift */; };
 		E5845D971B6D05B500453211 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5845D961B6D05B500453211 /* ViewController.swift */; };
 		E5845D9A1B6D05B500453211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5845D981B6D05B500453211 /* Main.storyboard */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44EED0A95C93DF6EF99AFEF5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31C39C21B92B84500026301 /* SportsMatchMaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SportsMatchMaker-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3A920801F66C8462344A768 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A3E84B031B772E1100C4390B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E5845D8F1B6D05B500453211 /* SportsMatchMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsMatchMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5845D931B6D05B500453211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +43,7 @@
 		E5845DA91B6D05B500453211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5845DAA1B6D05B500453211 /* SportsMatchMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMatchMakerTests.swift; sourceTree = "<group>"; };
 		E5845DB61B6D071E00453211 /* splash_src.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash_src.jpg; sourceTree = "<group>"; };
+		EAC28BBC86673408FDABD5D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1DCF6BBBC0BF8A60744AAE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CDD7BCF3108824CD798704E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44EED0A95C93DF6EF99AFEF5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98E8EE46D3A8CBC7F6DE60A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3A920801F66C8462344A768 /* Pods.debug.xcconfig */,
+				EAC28BBC86673408FDABD5D3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5845D861B6D05B500453211 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +89,8 @@
 				E5845D911B6D05B500453211 /* SportsMatchMaker */,
 				E5845DA71B6D05B500453211 /* SportsMatchMakerTests */,
 				E5845D901B6D05B500453211 /* Products */,
+				98E8EE46D3A8CBC7F6DE60A7 /* Pods */,
+				5CDD7BCF3108824CD798704E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +113,7 @@
 				E5845D9B1B6D05B500453211 /* Images.xcassets */,
 				E5845D9D1B6D05B500453211 /* LaunchScreen.xib */,
 				E5845D921B6D05B500453211 /* Supporting Files */,
+				A31C39C21B92B84500026301 /* SportsMatchMaker-Bridging-Header.h */,
 			);
 			path = SportsMatchMaker;
 			sourceTree = "<group>";
@@ -140,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5845DAE1B6D05B500453211 /* Build configuration list for PBXNativeTarget "SportsMatchMaker" */;
 			buildPhases = (
+				93ACA9C2CC84570ACA587D18 /* Check Pods Manifest.lock */,
 				E5845D8B1B6D05B500453211 /* Sources */,
 				E5845D8C1B6D05B500453211 /* Frameworks */,
 				E5845D8D1B6D05B500453211 /* Resources */,
+				34B0D49E08F6EAB1617DEA97 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +257,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34B0D49E08F6EAB1617DEA97 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93ACA9C2CC84570ACA587D18 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5845D8B1B6D05B500453211 /* Sources */ = {
@@ -365,8 +426,10 @@
 		};
 		E5845DAF1B6D05B500453211 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A920801F66C8462344A768 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Indo Ty (YR5FZE643M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Indo Ty (YR5FZE643M)";
 				INFOPLIST_FILE = SportsMatchMaker/Info.plist;
@@ -374,13 +437,17 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SportsMatchMaker/SportsMatchMaker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E5845DB01B6D05B500453211 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC28BBC86673408FDABD5D3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Indo Ty (YR5FZE643M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Indo Ty (YR5FZE643M)";
 				INFOPLIST_FILE = SportsMatchMaker/Info.plist;
@@ -388,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SportsMatchMaker/SportsMatchMaker-Bridging-Header.h";
 			};
 			name = Release;
 		};
