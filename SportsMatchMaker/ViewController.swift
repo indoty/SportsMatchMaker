@@ -10,7 +10,7 @@
 import UIKit
 import CoreLocation
 
-// check in part 3
+// check in part 4
 
 
 class ViewController: UIViewController, UIWebViewDelegate, UIScrollViewDelegate, CLLocationManagerDelegate{
@@ -85,3 +85,5 @@ class ViewController: UIViewController, UIWebViewDelegate, UIScrollViewDelegate,
         }
     }}
 
+
+// check in part 4
